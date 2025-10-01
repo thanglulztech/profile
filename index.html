@@ -1,22 +1,457 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Thang</title>
+  <title>Thangg</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <div class="profile-card">
-    <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
-    <h1>Nguyễn Văn A</h1>
-    <p class="title">Sinh viên Công nghệ thông tin.</p>
-    <p>CTU</p>
-    <div class="socials">
-      <a href="#">Facebook</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="#home" class="nav-link">
+        <h3>ThangLulzTech</h3>
+      </a>
     </div>
-  </div>
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#stats" class="nav-link">Stats</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#message" class="nav-link">Message</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="typing-name"></h1>
+          <h2 id="typing-subtitle"></h2>
+          <p id="hero-description">I am a second year Computer Networks and Data Communications student with a strong
+            passion for developing and building networks. I enjoy building enterprise networks, infrastructures and
+            solving problems with efficient solutions. With a diverse skill set and a strong passion for writing high
+            quality code, configuring devices that are easy to maintain and comply with industry standards, I am
+            constantly striving to improve and expand my expertise.</p>
+          <button class="cta-button">Go To Projects</button>
+        </div>
+        <div class="hero-image">
+          <div class="profile-img">
+            <img src="main.jpg" alt="Profile">
+            <div class="star star1">★</div>
+            <div class="star star2">★</div>
+            <div class="star star3">★</div>
+            <div class="star star4">★</div>
+            <div class="star star5">★</div>
+            <div class="star star6">★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg-->
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <!-- Skill Filter Tabs -->
+      <div class="skill-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="network">Network Engineer</button>
+        <button class="filter-btn" data-filter="cyber">Cyber Security</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-container">
+        <div class="skills-grid">
+
+          <!-- Network Engineer Skills -->
+          <div class="skill-card" data-category="network" data-skill="cisco">
+            <i class="fas fa-network-wired"></i>
+            <span>Cisco Packet Tracer</span>
+          </div>
+          <div class="skill-card" data-category="network" data-skill="gns3">
+            <i class="fas fa-project-diagram"></i>
+            <span>GNS3</span>
+          </div>
+          <div class="skill-card" data-category="network" data-skill="eve-ng">
+            <i class="fas fa-server"></i>
+            <span>EVE-NG</span>
+          </div>
+          <div class="skill-card" data-category="network" data-skill="pnetlab">
+            <i class="fas fa-laptop-code"></i>
+            <span>PNETLab</span>
+          </div>
+          <div class="skill-card" data-category="network" data-skill="router">
+            <i class="fas fa-route"></i>
+            <span>Router & Switch Config</span>
+          </div>
+          <div class="skill-card" data-category="network" data-skill="server">
+            <i class="fas fa-sitemap"></i>
+            <span>Server & VPCS</span>
+          </div>
+
+          <!-- Cyber Security Skills -->
+          <div class="skill-card" data-category="cyber" data-skill="firewall">
+            <i class="fas fa-shield-alt"></i>
+            <span>Firewall Config</span>
+          </div>
+          <div class="skill-card" data-category="cyber" data-skill="wireshark">
+            <i class="fas fa-bug"></i>
+            <span>Wireshark</span>
+          </div>
+          <div class="skill-card" data-category="cyber" data-skill="kali">
+            <i class="fas fa-skull-crossbones"></i>
+            <span>Kali Linux</span>
+          </div>
+          <div class="skill-card" data-category="cyber" data-skill="ids">
+            <i class="fas fa-lock"></i>
+            <span>IDS/IPS</span>
+          </div>
+          <div class="skill-card" data-category="cyber" data-skill="pentest">
+            <i class="fas fa-user-secret"></i>
+            <span>Penetration Testing</span>
+          </div>
+          <div class="skill-card" data-category="cyber" data-skill="cryptography">
+            <i class="fas fa-key"></i>
+            <span>Cryptography Basics</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card" data-category="tools" data-skill="python">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card" data-category="tools" data-skill="c++">
+            <i class="fas fa-code"></i>
+            <span>C/C++</span>
+          </div>
+          <div class="skill-card" data-category="tools" data-skill="git">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card" data-category="tools" data-skill="github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-card" data-category="tools" data-skill="terminal">
+            <i class="fas fa-terminal"></i>
+            <span>Linux CLI</span>
+          </div>
+          <div class="skill-card" data-category="tools" data-skill="docker">
+            <i class="fab fa-docker"></i>
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg-->
+  <!-- Brands Section -->
+  <section id="brands" class="brands">
+    <div class="container">
+      <h2 class="section-title"></h2>
+      <p></p>
+      <div class="brand-slider">
+        <div class="brand-track">
+          <div class="brand-item" data-brand="google">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="brand-item" data-brand="facebook">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="brand-item" data-brand="youtube">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="brand-item" data-brand="github">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="brand-item" data-brand="microsoft">
+            <i class="fab fa-microsoft"></i>
+          </div>
+          <div class="brand-item" data-brand="apple">
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="brand-item" data-brand="dribbble">
+            <i class="fab fa-dribbble"></i>
+          </div>
+          <div class="brand-item" data-brand="spotify">
+            <i class="fab fa-spotify"></i>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="brand-item" data-brand="google">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="brand-item" data-brand="facebook">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="brand-item" data-brand="youtube">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="brand-item" data-brand="github">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="brand-item" data-brand="microsoft">
+            <i class="fab fa-microsoft"></i>
+          </div>
+          <div class="brand-item" data-brand="apple">
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="brand-item" data-brand="dribbble">
+            <i class="fab fa-dribbble"></i>
+          </div>
+          <div class="brand-item" data-brand="spotify">
+            <i class="fab fa-spotify"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <img src="img1.jpg" alt="E-Commerce Website">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Website</h3>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+            </div>
+            <p>Full-stack e-commerce platform dengan fitur keranjang belanja, pembayaran online, dan dashboard admin. Im non-specialist know a little.(WEAK)
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <img src="img2.jpg" alt="Restaurant App">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Restaurant App</h3>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <p>Aplikasi pemesanan makanan online dengan fitur real-time tracking dan sistem rating.Things i learned from studying online(WEAK)</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <img src="img3real.jpg" alt="Dashboard Analytics">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Blue Team</h3>
+            <div class="project-tech">
+              <span class="tech-tag">Netowrk</span>
+              <span class="tech-tag">Cyber</span>
+              <span class="tech-tag">routing&VPCS</span>
+            </div>
+            <p>Master the OSI network model, other modern layers TCP/IP Model, ZTA, SASE, Cloud.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <img src="imgcisco.jpg.png" alt="Learning Management System">
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Design & Implementation</h3>
+            <div class="project-tech">
+              <span class="tech-tag">Cisco Buliding</span>
+              <span class="tech-tag">Configuration</span>
+              <span class="tech-tag">CLI nude</span>
+            </div>
+            <p>Design & Implementation of a Secure Company Network System Using Cisco Packet Tracer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <h2 class="section-title">Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="stat-number" data-target="50">0+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number" data-target="30">0+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number" data-target="100">0+</h3>
+          <p>Cups of Coffee</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="stat-number" data-target="5">0+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+
+      <!-- Contact Filter Tabs -->
+      <div class="contact-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="social">Social</button>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="contact-container">
+        <div class="contact-grid">
+          <!-- Personal Contact -->
+          <div class="contact-card" data-category="personal" data-contact="email">
+            <i class="fas fa-envelope"></i>
+            <span>minhthang7945@gmail.com</span>
+          </div>
+          <div class="contact-card" data-category="personal" data-contact="phone">
+            <i class="fas fa-phone"></i>
+            <span>84+707 954 772</span>
+          </div>
+          <div class="contact-card" data-category="personal" data-contact="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>+84707 954 722/<span>
+          </div>
+          <div class="contact-card" data-category="personal" data-contact="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Can Tho, Vietnam </span>
+          </div>
+
+          <!-- Business Contact -->
+          <div class="contact-card" data-category="business" data-contact="work">
+            <i class="fas fa-briefcase"></i>
+            <span>Dai Hoc Can Tho</span>
+          </div>
+          <div class="contact-card" data-category="business" data-contact="linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span>Nothing</span>
+          </div>
+          <div class="contact-card" data-category="business" data-contact="website">
+            <i class="fas fa-globe"></i>
+            <span>website athgnnel.io/***</span>
+          </div>
+          <div class="contact-card" data-category="business" data-contact="cv">
+            <i class="fas fa-file-alt"></i>
+            <span>Download CV</span>
+          </div>
+          <div class="contact-card" data-category="business" data-contact="meeting">
+            <i class="fas fa-calendar"></i>
+            <span>Schedule Meeting</span>
+          </div>
+          <div class="contact-card" data-category="business" data-contact="collaborate">
+            <i class="fas fa-handshake"></i>
+            <span>Collaborate</span>
+          </div>
+
+          <!-- Social Media -->
+          <div class="contact-card" data-category="social" data-contact="github">
+            <i class="fab fa-github"></i>
+            <span>https://github.com/thanglulztech/</span>
+          </div>
+          <div class="contact-card" data-category="social" data-contact="instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Nothing</span>
+          </div>
+          <div class="contact-card" data-category="social" data-contact="twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Nothing</span>
+          </div>
+          <div class="contact-card" data-category="social" data-contact="youtube">
+            <i class="fab fa-youtube"></i>
+            <span>Nothing</span>
+          </div>
+          <div class="contact-card" data-category="social" data-contact="discord">
+            <i class="fab fa-discord"></i>
+            <span>nmthang2006</span>
+          </div>
+          <div class="contact-card" data-category="social" data-contact="telegram">
+            <i class="fab fa-telegram"></i>
+            <span>@thangyeun**/@*</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section id="message" class="message">
+    <div class="container">
+      <div class="contact-form-section">
+        <h2 class="section-title">Send Message</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Gustiawan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
